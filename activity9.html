@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <nav class="h-20 bg-red-300 p-3 text-white justify-center flex">
+            <a href="#"><p class="m-3">Home</p></a>
+            <a href="#"><p class="m-3">About</p></a>
+            <a href="#"id="contact"><p class="m-3" >Contact</p></a>
+    </nav>
+    <form id="form" class="hidden bg-blue-200 flex w-full justify-center h-30 items-center ">
+        <Label>Name :</Label>
+        <input type="text" id="name" class="border"><pre>      </pre>
+        <button type="submit" class="bg-red-500 text-white w-20">Submit</button>
+    </form>
+<div class="flex p-5">
+    <div class="size-full"><img src="https://images.unsplash.com/photo-1520048330564-702a8875182f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybCUyMGxhbmRzY2FwZXxlbnwwfHwwfHx8MA%3D%3D" alt=""></div>
+    <div class="flex justify-center m-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid magni obcaecati labore et corrupti. Dolor repellendus itaque eum, numquam delectus voluptas aliquam esse sit. Assumenda veritatis error quas vel nam.</div>
+</div>
+<hr>
+<div class="flex p-2 ">
+    <p class="m-3">dwhbj,dbhcjd,bcj,sdbcklwkldnjfukfjhfibwkdkjhkwdh</p>
+    <p class="m-3">dwhbj,dbhcjd,bcj,sdbcklwkldnjfukfjhfibwkdkjhkwdh</p>
+    <p class="m-3">dwhbj,dbhcjd,bcj,sdbcklwkldnjfukfjhfibwkdkjhkwdh</p>
+    <p class="m-3">dwhbj,dbhcjd,bcj,sdbcklwkldnjfukfjhfibwkdkjhkwdh</p>
+</div>
+<hr>
+
+<script>
+    let contact=document.getElementById("contact");
+    contact.addEventListener('click',contactus);
+    let form=document.getElementById('form');
+
+    function contactus(){
+        if(form.classList.contains('hidden')){
+            form.classList.remove('hidden');
+        }
+        else{
+            form.classList.add('hidden');
+        }
+    }
+</script>
+</body>
+</html>
